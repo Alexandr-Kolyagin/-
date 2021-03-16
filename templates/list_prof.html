@@ -1,0 +1,19 @@
+{%extends "main.html"%}
+
+{% block content %}
+    <div align="left">
+        {% if "ol" == list_param %}
+            <ol>
+              {% for prof in profs %}
+                <li>{{prof}}</li>
+              {% endfor %}
+            </ol>
+        {% elif "ul" == list_param %}
+            <ul>
+              {% for prof in profs %}
+                <li>{{prof}}</li>
+              {% endfor %}
+            </ul>
+    </div>
+    {% endif %}
+{% endblock %}

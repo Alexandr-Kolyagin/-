@@ -1,0 +1,15 @@
+{%extends "main.html"%}
+
+{% block content %}
+    {% if "инженер" in prof or "строитель" in prof%}
+        <div align="center">
+            <h2>Инженерные тренажеры</h2>
+            <img style="max-width: 600px;" src="../static/img/among_us_map_ingenere.png" alt="">
+        </div>
+    {% else %}
+        <div align="center">
+            <h2>Научные симуляторы</h2>
+            <img style="max-width: 600px;" src="../static/img/among_us_map_science.png" alt="">
+        </div>
+    {% endif %}
+{% endblock %}
