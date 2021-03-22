@@ -1,0 +1,16 @@
+{%extends "main.html"%}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <div align="left">
+        <ul>
+            <li>Фамилия: {{familie}}</li>
+            <li>Имя: {{name}}</li>
+            <li>Образование: {{class}}</li>
+            <li>Профессия: {{prof}}</li>
+            <li>Пол: {{sex}}</li>
+            <li>Мотивация: {{about}}</li>
+            <li>Готовы остаться на Марсе: {{accept}}</li>
+        </ul>
+    </div>
+{% endblock %}
